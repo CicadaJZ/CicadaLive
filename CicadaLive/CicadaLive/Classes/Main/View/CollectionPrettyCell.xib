@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="CicadaLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="231" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="231" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLN-Xy-etI">
+                        <rect key="frame" x="0.0" y="160" width="70" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="gdD-RQ-AFj"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ico_location" title="广州市">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="11"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duc-hk-pSS">
+                        <rect key="frame" x="0.0" y="139" width="226" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="mgm-mR-lWM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="kHO-XI-ndn">
+                        <rect key="frame" x="0.0" y="0.0" width="231" height="134"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTn-Rp-8Tp">
+                        <rect key="frame" x="166" y="5" width="60" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Is9-BL-Awa"/>
+                            <constraint firstAttribute="width" constant="60" id="nzj-Zt-42u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="duc-hk-pSS" firstAttribute="top" secondItem="kHO-XI-ndn" secondAttribute="bottom" constant="5" id="11M-sa-Zdc"/>
+                <constraint firstAttribute="trailing" secondItem="lTn-Rp-8Tp" secondAttribute="trailing" constant="5" id="1n6-De-qDX"/>
+                <constraint firstItem="RLN-Xy-etI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AXi-ua-eVx"/>
+                <constraint firstItem="kHO-XI-ndn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F4z-wT-VCJ"/>
+                <constraint firstAttribute="trailing" secondItem="kHO-XI-ndn" secondAttribute="trailing" id="Te8-r6-CXY"/>
+                <constraint firstAttribute="bottom" secondItem="RLN-Xy-etI" secondAttribute="bottom" constant="10" id="qLV-rF-trC"/>
+                <constraint firstItem="RLN-Xy-etI" firstAttribute="top" secondItem="duc-hk-pSS" secondAttribute="bottom" constant="5" id="uXD-NP-Xag"/>
+                <constraint firstItem="kHO-XI-ndn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uhe-m4-bcQ"/>
+                <constraint firstItem="duc-hk-pSS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x9H-mw-yor"/>
+                <constraint firstAttribute="trailing" secondItem="duc-hk-pSS" secondAttribute="trailing" constant="5" id="yde-i9-0mI"/>
+                <constraint firstItem="lTn-Rp-8Tp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="zKi-C7-v1f"/>
+            </constraints>
+            <size key="customSize" width="231" height="184"/>
+            <point key="canvasLocation" x="209.92366412213741" y="66.901408450704224"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103.5" height="103.5"/>
+    </resources>
+</document>
