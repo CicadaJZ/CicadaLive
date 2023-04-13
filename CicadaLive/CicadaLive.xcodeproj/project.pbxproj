@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */; };
 		3BF0C25D29E7B9E900AE950B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C25C29E7B9E900AE950B /* SceneDelegate.swift */; };
-		3BF0C25F29E7B9E900AE950B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C25E29E7B9E900AE950B /* ViewController.swift */; };
 		3BF0C26229E7B9E900AE950B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26029E7B9E900AE950B /* Main.storyboard */; };
 		3BF0C26429E7B9EF00AE950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26329E7B9EF00AE950B /* Assets.xcassets */; };
 		3BF0C26729E7B9EF00AE950B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26529E7B9EF00AE950B /* LaunchScreen.storyboard */; };
@@ -39,7 +38,6 @@
 		3BF0C25729E7B9E900AE950B /* CicadaLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicadaLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF0C25C29E7B9E900AE950B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BF0C25E29E7B9E900AE950B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BF0C26129E7B9E900AE950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF0C26329E7B9EF00AE950B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF0C26629E7B9EF00AE950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +74,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BCE6CF529E7DDC100378B72 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE6CF629E7DDDB00378B72 /* Main */,
+				3BCE6CF729E7DDE200378B72 /* Home */,
+				3BCE6CF829E7DDE800378B72 /* Live */,
+				3BCE6CF929E7DDEE00378B72 /* Follow */,
+				3BCE6CFA29E7DE0900378B72 /* Profile */,
+				3BCE6CFB29E7DE1300378B72 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3BCE6CF629E7DDDB00378B72 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3BCE6CF729E7DDE200378B72 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3BCE6CF829E7DDE800378B72 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		3BCE6CF929E7DDEE00378B72 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		3BCE6CFA29E7DE0900378B72 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3BCE6CFB29E7DE1300378B72 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		3BF0C24E29E7B9E800AE950B = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +152,9 @@
 		3BF0C25929E7B9E900AE950B /* CicadaLive */ = {
 			isa = PBXGroup;
 			children = (
+				3BCE6CF529E7DDC100378B72 /* Classes */,
 				3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */,
 				3BF0C25C29E7B9E900AE950B /* SceneDelegate.swift */,
-				3BF0C25E29E7B9E900AE950B /* ViewController.swift */,
 				3BF0C26029E7B9E900AE950B /* Main.storyboard */,
 				3BF0C26329E7B9EF00AE950B /* Assets.xcassets */,
 				3BF0C26529E7B9EF00AE950B /* LaunchScreen.storyboard */,
@@ -258,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF0C25F29E7B9E900AE950B /* ViewController.swift in Sources */,
 				3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */,
 				3BF0C25D29E7B9E900AE950B /* SceneDelegate.swift in Sources */,
 			);
