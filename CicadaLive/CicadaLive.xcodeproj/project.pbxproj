@@ -32,6 +32,15 @@
 		3B52AB5129E91CBC0035E6F6 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB5029E91CBC0035E6F6 /* AnchorGroup.swift */; };
 		3B52AB5329E9277C0035E6F6 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB5229E9277C0035E6F6 /* AnchorModel.swift */; };
 		3B52AB5529E94DF90035E6F6 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB5429E94DF90035E6F6 /* CollectionBaseCell.swift */; };
+		3B52AB5729E959FF0035E6F6 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB5629E959FF0035E6F6 /* RecommendCycleView.swift */; };
+		3B52AB5B29E95A820035E6F6 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB5A29E95A820035E6F6 /* RecommendCycleView.xib */; };
+		3B52AB5D29E993DA0035E6F6 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB5C29E993D90035E6F6 /* CycleModel.swift */; };
+		3B52AB6029E99A4C0035E6F6 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB5E29E99A4B0035E6F6 /* CollectionCycleCell.swift */; };
+		3B52AB6129E99A4C0035E6F6 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB5F29E99A4B0035E6F6 /* CollectionCycleCell.xib */; };
+		3B52AB6429E9ABD60035E6F6 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB6229E9ABD60035E6F6 /* CollectionGameCell.swift */; };
+		3B52AB6529E9ABD60035E6F6 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB6329E9ABD60035E6F6 /* CollectionGameCell.xib */; };
+		3B52AB6729E9ABFD0035E6F6 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB6629E9ABFD0035E6F6 /* RecommendGameView.swift */; };
+		3B52AB6929E9AC120035E6F6 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB6829E9AC120035E6F6 /* RecommendGameView.xib */; };
 		3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */; };
 		3BF0C26229E7B9E900AE950B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26029E7B9E900AE950B /* Main.storyboard */; };
 		3BF0C26429E7B9EF00AE950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26329E7B9EF00AE950B /* Assets.xcassets */; };
@@ -88,6 +97,15 @@
 		3B52AB5029E91CBC0035E6F6 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		3B52AB5229E9277C0035E6F6 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		3B52AB5429E94DF90035E6F6 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		3B52AB5629E959FF0035E6F6 /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		3B52AB5A29E95A820035E6F6 /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		3B52AB5C29E993D90035E6F6 /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CycleModel.swift; path = CicadaLive/Classes/Home/CycleModel.swift; sourceTree = SOURCE_ROOT; };
+		3B52AB5E29E99A4B0035E6F6 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		3B52AB5F29E99A4B0035E6F6 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
+		3B52AB6229E9ABD60035E6F6 /* CollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
+		3B52AB6329E9ABD60035E6F6 /* CollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
+		3B52AB6629E9ABFD0035E6F6 /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		3B52AB6829E9AC120035E6F6 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		3BF0C25729E7B9E900AE950B /* CicadaLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicadaLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF0C26129E7B9E900AE950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +178,14 @@
 			children = (
 				3B52AB3C29E8711B0035E6F6 /* CollectionHeaderView.swift */,
 				3B52AB3D29E8711B0035E6F6 /* CollectionHeaderView.xib */,
+				3B52AB5629E959FF0035E6F6 /* RecommendCycleView.swift */,
+				3B52AB5A29E95A820035E6F6 /* RecommendCycleView.xib */,
+				3B52AB5E29E99A4B0035E6F6 /* CollectionCycleCell.swift */,
+				3B52AB5F29E99A4B0035E6F6 /* CollectionCycleCell.xib */,
+				3B52AB6229E9ABD60035E6F6 /* CollectionGameCell.swift */,
+				3B52AB6329E9ABD60035E6F6 /* CollectionGameCell.xib */,
+				3B52AB6629E9ABFD0035E6F6 /* RecommendGameView.swift */,
+				3B52AB6829E9AC120035E6F6 /* RecommendGameView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +193,7 @@
 		3B52AB2829E803690035E6F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B52AB5C29E993D90035E6F6 /* CycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -483,8 +510,12 @@
 				3B52AB4329E8796B0035E6F6 /* CollectionNormalCell.xib in Resources */,
 				3BF0C26429E7B9EF00AE950B /* Assets.xcassets in Resources */,
 				3B52AB2529E8025A0035E6F6 /* Profile.storyboard in Resources */,
+				3B52AB6929E9AC120035E6F6 /* RecommendGameView.xib in Resources */,
+				3B52AB6529E9ABD60035E6F6 /* CollectionGameCell.xib in Resources */,
 				3B52AB2329E802220035E6F6 /* Live.storyboard in Resources */,
 				3BF0C26229E7B9E900AE950B /* Main.storyboard in Resources */,
+				3B52AB5B29E95A820035E6F6 /* RecommendCycleView.xib in Resources */,
+				3B52AB6129E99A4C0035E6F6 /* CollectionCycleCell.xib in Resources */,
 				3B52AB4729E880AD0035E6F6 /* CollectionPrettyCell.xib in Resources */,
 				3B52AB1C29E7F9B30035E6F6 /* Follow.storyboard in Resources */,
 				3B52AB2129E801E30035E6F6 /* Home.storyboard in Resources */,
@@ -615,18 +646,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B52AB5729E959FF0035E6F6 /* RecommendCycleView.swift in Sources */,
 				3B52AB1229E7EFD80035E6F6 /* MainViewController.swift in Sources */,
 				3B52AB3E29E8711B0035E6F6 /* CollectionHeaderView.swift in Sources */,
 				3B52AB3929E8460E0035E6F6 /* UIColor-Extension.swift in Sources */,
+				3B52AB6729E9ABFD0035E6F6 /* RecommendGameView.swift in Sources */,
 				3B52AB3B29E867A20035E6F6 /* RecommendViewController.swift in Sources */,
 				3B52AB5129E91CBC0035E6F6 /* AnchorGroup.swift in Sources */,
 				3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */,
 				3B52AB3229E810490035E6F6 /* PageTitleView.swift in Sources */,
+				3B52AB6029E99A4C0035E6F6 /* CollectionCycleCell.swift in Sources */,
+				3B52AB5D29E993DA0035E6F6 /* CycleModel.swift in Sources */,
 				3B52AB3729E8437E0035E6F6 /* PageContentView.swift in Sources */,
 				3B52AB3029E809520035E6F6 /* UIBarButtonItem-Extension.swift in Sources */,
 				3B52AB3529E831D30035E6F6 /* Common.swift in Sources */,
 				3B52AB4629E880AD0035E6F6 /* CollectionPrettyCell.swift in Sources */,
 				3B52AB4F29E90D0E0035E6F6 /* NSDate-Extension.swift in Sources */,
+				3B52AB6429E9ABD60035E6F6 /* CollectionGameCell.swift in Sources */,
 				3B52AB4229E8796B0035E6F6 /* CollectionNormalCell.swift in Sources */,
 				3B52AB4A29E8F2420035E6F6 /* NetworkTools.swift in Sources */,
 				3B52AB5529E94DF90035E6F6 /* CollectionBaseCell.swift in Sources */,

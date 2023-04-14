@@ -12,6 +12,9 @@ private let kItemW : CGFloat = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH : CGFloat = kItemW * 3 / 4
 private let kPrettyItemH : CGFloat = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
+private let kCycleViewH : CGFloat = kScreenW * 3 / 8
+private let kGameViewH : CGFloat = 90
+
 
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -20,6 +23,18 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommendViewController: UIViewController {
     
     private lazy var recommendVM: RecommendViewModel = RecommendViewModel()
+    
+    private lazy var cycleView: RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
+    
+    private lazy var gameView: RecommendGameView = {
+        let cycleView = RecommendGameView.recommendGameView()
+        cycleView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return cycleView
+    }()
     
     private lazy var collectionView : UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
@@ -56,15 +71,35 @@ class RecommendViewController: UIViewController {
 //MARK: 设置UI
 extension RecommendViewController {
     func setupUI() {
+        //
         view.addSubview(collectionView)
+        
+        //
+        collectionView.addSubview(cycleView)
+        
+        //
+        collectionView.addSubview(gameView)
+        
+        //
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
 //MARK: 发送网络请求
 extension RecommendViewController {
     private func loadData() {
+        //
         recommendVM.requestData {
+            //
             self.collectionView.reloadData()
+            
+            //
+            self.gameView.groups = self.recommendVM.anchorGroups
+        }
+        
+        //
+        recommendVM.requestCycleData {
+            self.cycleView.cycleData = self.recommendVM.cycleData
         }
     }
 }

@@ -20,6 +20,7 @@ class AnchorGroup: NSObject {
 
     @objc var tag_name : String = ""
     @objc var icon_name : String = "home_header_normal"
+    @objc var icon_url : String = ""
     
     lazy var anchors : [AnchorModel] = [AnchorModel]()
 

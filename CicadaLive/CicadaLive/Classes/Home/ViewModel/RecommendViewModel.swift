@@ -8,6 +8,7 @@
 import UIKit
 
 class RecommendViewModel {
+    lazy var cycleData : [CycleModel] = [CycleModel]()
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
     private lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     private lazy var verticalGroup : AnchorGroup = AnchorGroup()
@@ -92,5 +93,20 @@ extension RecommendViewModel {
             self.anchorGroups.insert(self.bigDataGroup, at: 0)
             finishedCallBack()
         })
+    }
+    
+    func requestCycleData(finishedCallBack: @escaping (() -> ())) {
+        NetworkTools.requestData(type: .GET, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { result in
+            guard let resultDic = result as? Dictionary<String, Any> else { return }
+            print(resultDic)
+
+            guard let dataArray = resultDic["data"] as? [Dictionary<String, Any>] else { return }
+            for dict in dataArray {
+                //kvc方式 字典转模型
+                let cycleModel = CycleModel(dict: dict)
+                self.cycleData.append(cycleModel)
+            }
+            finishedCallBack()
+        }
     }
 }
