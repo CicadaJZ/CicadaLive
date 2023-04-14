@@ -8,6 +8,7 @@ target 'CicadaLive' do
   # Pods for CicadaLive
 
 pod 'Alamofire'
+pod 'Kingfisher', '~> 7.0'
 
   target 'CicadaLiveTests' do
     inherit! :search_paths

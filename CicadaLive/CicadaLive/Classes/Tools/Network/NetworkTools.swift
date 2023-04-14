@@ -18,17 +18,28 @@ struct DecodableType: Decodable {
 }
 
 class NetworkTools {
-    class func requestData(type: MethodType, URLString: String, parameters: [String : AnyObject]? = nil, finishedCallBack: @escaping ((_ result: Any) -> ())) {
+    class func requestData(type: MethodType, URLString: String, parameters: [String : Any]? = nil, finishedCallBack: @escaping ((_ result: Any) -> ())) {
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
         
-        AF.request(URLString, method: method, parameters: parameters).responseDecodable(of: DecodableType.self) { response in
+        AF.request(URLString, method: method, parameters: parameters).responseData { response in
             switch response.result {
             case .failure(let error):
                 print(error)
                 return
-            case .success(_):
-                finishedCallBack(response.result)
+            case .success(let data):
+                let jsonData = try! JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                finishedCallBack(jsonData)
             }
         }
+        
+//        AF.request(URLString, method: method, parameters: parameters, encoding: URLEncoding.default).responseDecodable(of: DecodableType.self) { response in
+//            switch response.result {
+//            case .failure(let error):
+//                print(error)
+//                return
+//            case .success(_):
+//                finishedCallBack(response.result)
+//            }
+//        }
     }
 }

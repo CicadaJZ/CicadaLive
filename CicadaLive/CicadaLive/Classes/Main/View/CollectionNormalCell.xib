@@ -30,7 +30,7 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-sZ-1Cu">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-sZ-1Cu">
                         <rect key="frame" x="0.0" y="0.0" width="198" height="136"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -40,21 +40,22 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="husky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zf-7Q-1m2">
-                        <rect key="frame" x="5" y="113" width="40.666666666666664" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <rect key="frame" x="5" y="115.33333333333333" width="36" height="15.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fS-mT-zDJ">
-                        <rect key="frame" x="107.66666666666669" y="117" width="85.333333333333314" height="14"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fS-mT-zDJ">
+                        <rect key="frame" x="139" y="117" width="54" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="ekS-d7-6vb"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="在线状态">
-                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                        </buttonConfiguration>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="在线状态">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                     </button>
                 </subviews>
             </view>
@@ -76,6 +77,12 @@
                 <constraint firstItem="3Zf-7Q-1m2" firstAttribute="leading" secondItem="2OB-sZ-1Cu" secondAttribute="leading" constant="5" id="nSX-WL-ekE"/>
             </constraints>
             <size key="customSize" width="198" height="165"/>
+            <connections>
+                <outlet property="iconImageView" destination="2OB-sZ-1Cu" id="xHq-2s-g8E"/>
+                <outlet property="nickNameLabel" destination="3Zf-7Q-1m2" id="tkU-sC-plV"/>
+                <outlet property="onlineBtn" destination="1fS-mT-zDJ" id="Ecb-ZA-bET"/>
+                <outlet property="roomNameLabel" destination="kju-Oh-nNq" id="mkQ-ta-CHr"/>
+            </connections>
             <point key="canvasLocation" x="161.83206106870227" y="60.211267605633807"/>
         </collectionViewCell>
     </objects>

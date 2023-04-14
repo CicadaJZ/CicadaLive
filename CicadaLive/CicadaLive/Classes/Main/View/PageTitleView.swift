@@ -115,6 +115,9 @@ extension PageTitleView {
         guard let currentLabel = ges.view as? UILabel else { return }
         currentLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
         
+        // 重复点击同一个，直接返回
+        if currentLabel.tag == currentIndex { return }
+        
         let oldLabel = titleLabels[currentIndex]
         oldLabel.textColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
         
