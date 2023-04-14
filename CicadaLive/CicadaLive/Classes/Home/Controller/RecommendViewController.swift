@@ -17,7 +17,9 @@ private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class RecommendViewController: UIViewController {    
+class RecommendViewController: UIViewController {
+    
+    private lazy var recommendVM: RecommendViewModel = RecommendViewModel()
     
     private lazy var collectionView : UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
@@ -44,6 +46,7 @@ class RecommendViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .purple
         setupUI()
+        loadData()
     }
     
 
@@ -54,6 +57,13 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
     func setupUI() {
         view.addSubview(collectionView)
+    }
+}
+
+//MARK: 发送网络请求
+extension RecommendViewController {
+    private func loadData() {
+        recommendVM.requestData()
     }
 }
 

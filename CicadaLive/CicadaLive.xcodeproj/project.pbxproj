@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7C1CCA328E8D0262FA107D /* Pods_CicadaLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3B74997026A5D7B458D109 /* Pods_CicadaLiveTests.framework */; };
 		3B52AB1229E7EFD80035E6F6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB1029E7EFD80035E6F6 /* MainViewController.swift */; };
 		3B52AB1C29E7F9B30035E6F6 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB1B29E7F9B30035E6F6 /* Follow.storyboard */; };
 		3B52AB2129E801E30035E6F6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB2029E801E30035E6F6 /* Home.storyboard */; };
@@ -25,6 +26,8 @@
 		3B52AB4329E8796B0035E6F6 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB4129E8796B0035E6F6 /* CollectionNormalCell.xib */; };
 		3B52AB4629E880AD0035E6F6 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB4429E880AD0035E6F6 /* CollectionPrettyCell.swift */; };
 		3B52AB4729E880AD0035E6F6 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52AB4529E880AD0035E6F6 /* CollectionPrettyCell.xib */; };
+		3B52AB4A29E8F2420035E6F6 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB4929E8F2420035E6F6 /* NetworkTools.swift */; };
+		3B52AB4D29E9061C0035E6F6 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB4C29E9061C0035E6F6 /* RecommendViewModel.swift */; };
 		3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */; };
 		3BF0C26229E7B9E900AE950B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26029E7B9E900AE950B /* Main.storyboard */; };
 		3BF0C26429E7B9EF00AE950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26329E7B9EF00AE950B /* Assets.xcassets */; };
@@ -32,6 +35,8 @@
 		3BF0C27229E7B9F000AE950B /* CicadaLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C27129E7B9F000AE950B /* CicadaLiveTests.swift */; };
 		3BF0C27C29E7B9F000AE950B /* CicadaLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C27B29E7B9F000AE950B /* CicadaLiveUITests.swift */; };
 		3BF0C27E29E7B9F000AE950B /* CicadaLiveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C27D29E7B9F000AE950B /* CicadaLiveUITestsLaunchTests.swift */; };
+		E52C9B0EBF2387AE4D3410C9 /* Pods_CicadaLive_CicadaLiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4DE2A25111E90DA5312721 /* Pods_CicadaLive_CicadaLiveUITests.framework */; };
+		E8B9D0D00AFD88A2B8FA325D /* Pods_CicadaLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD569002256AC6929D6AE4BF /* Pods_CicadaLive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1BFA0903DC133C6F25E044 /* Pods-CicadaLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicadaLive.debug.xcconfig"; path = "Target Support Files/Pods-CicadaLive/Pods-CicadaLive.debug.xcconfig"; sourceTree = "<group>"; };
+		2C4DE2A25111E90DA5312721 /* Pods_CicadaLive_CicadaLiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicadaLive_CicadaLiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3B74997026A5D7B458D109 /* Pods_CicadaLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicadaLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B52AB1129E7EFD80035E6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/MainViewController.swift; sourceTree = "<group>"; };
 		3B52AB1B29E7F9B30035E6F6 /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		3B52AB2029E801E30035E6F6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 		3B52AB4129E8796B0035E6F6 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		3B52AB4429E880AD0035E6F6 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		3B52AB4529E880AD0035E6F6 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		3B52AB4929E8F2420035E6F6 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		3B52AB4C29E9061C0035E6F6 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		3BF0C25729E7B9E900AE950B /* CicadaLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicadaLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF0C26129E7B9E900AE950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +91,12 @@
 		3BF0C27729E7B9F000AE950B /* CicadaLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CicadaLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF0C27B29E7B9F000AE950B /* CicadaLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicadaLiveUITests.swift; sourceTree = "<group>"; };
 		3BF0C27D29E7B9F000AE950B /* CicadaLiveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicadaLiveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52581DBE6B40700E36FCC1DD /* Pods-CicadaLive-CicadaLiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicadaLive-CicadaLiveUITests.release.xcconfig"; path = "Target Support Files/Pods-CicadaLive-CicadaLiveUITests/Pods-CicadaLive-CicadaLiveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5DE613B9E94023FF8888AFB3 /* Pods-CicadaLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicadaLiveTests.debug.xcconfig"; path = "Target Support Files/Pods-CicadaLiveTests/Pods-CicadaLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B108D325261AEF4170BFF0E /* Pods-CicadaLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicadaLive.release.xcconfig"; path = "Target Support Files/Pods-CicadaLive/Pods-CicadaLive.release.xcconfig"; sourceTree = "<group>"; };
+		B928BC96C2CBC8360C543C73 /* Pods-CicadaLive-CicadaLiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicadaLive-CicadaLiveUITests.debug.xcconfig"; path = "Target Support Files/Pods-CicadaLive-CicadaLiveUITests/Pods-CicadaLive-CicadaLiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE5C24C8DE830921DCC874B5 /* Pods-CicadaLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicadaLiveTests.release.xcconfig"; path = "Target Support Files/Pods-CicadaLiveTests/Pods-CicadaLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD569002256AC6929D6AE4BF /* Pods_CicadaLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicadaLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B9D0D00AFD88A2B8FA325D /* Pods_CicadaLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7C1CCA328E8D0262FA107D /* Pods_CicadaLiveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +120,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52C9B0EBF2387AE4D3410C9 /* Pods_CicadaLive_CicadaLiveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3757A2051FA1F86AB5F7E31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD569002256AC6929D6AE4BF /* Pods_CicadaLive.framework */,
+				2C4DE2A25111E90DA5312721 /* Pods_CicadaLive_CicadaLiveUITests.framework */,
+				2E3B74997026A5D7B458D109 /* Pods_CicadaLiveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B52AB2629E8034D0035E6F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +209,22 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		3B52AB4829E8F2000035E6F6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3B52AB4929E8F2420035E6F6 /* NetworkTools.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3B52AB4B29E905F30035E6F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B52AB4C29E9061C0035E6F6 /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3BCE6CF529E7DDC100378B72 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +251,7 @@
 		3BCE6CF729E7DDE200378B72 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B52AB4B29E905F30035E6F6 /* ViewModel */,
 				3B52AB2829E803690035E6F6 /* Model */,
 				3B52AB2729E803600035E6F6 /* View */,
 				3B52AB2629E8034D0035E6F6 /* Controller */,
@@ -240,6 +286,7 @@
 		3BCE6CFB29E7DE1300378B72 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3B52AB4829E8F2000035E6F6 /* Network */,
 				3B52AB3329E831BD0035E6F6 /* Common */,
 				3B52AB2E29E809140035E6F6 /* Extension */,
 			);
@@ -253,6 +300,8 @@
 				3BF0C27029E7B9F000AE950B /* CicadaLiveTests */,
 				3BF0C27A29E7B9F000AE950B /* CicadaLiveUITests */,
 				3BF0C25829E7B9E900AE950B /* Products */,
+				F7AFFFE026513D34DFF616ED /* Pods */,
+				3757A2051FA1F86AB5F7E31A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,6 +344,19 @@
 			path = CicadaLiveUITests;
 			sourceTree = "<group>";
 		};
+		F7AFFFE026513D34DFF616ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A1BFA0903DC133C6F25E044 /* Pods-CicadaLive.debug.xcconfig */,
+				8B108D325261AEF4170BFF0E /* Pods-CicadaLive.release.xcconfig */,
+				B928BC96C2CBC8360C543C73 /* Pods-CicadaLive-CicadaLiveUITests.debug.xcconfig */,
+				52581DBE6B40700E36FCC1DD /* Pods-CicadaLive-CicadaLiveUITests.release.xcconfig */,
+				5DE613B9E94023FF8888AFB3 /* Pods-CicadaLiveTests.debug.xcconfig */,
+				BE5C24C8DE830921DCC874B5 /* Pods-CicadaLiveTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,9 +364,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF0C28129E7B9F000AE950B /* Build configuration list for PBXNativeTarget "CicadaLive" */;
 			buildPhases = (
+				5721BDF7DCF7F3EBA13DC5FC /* [CP] Check Pods Manifest.lock */,
 				3BF0C25329E7B9E900AE950B /* Sources */,
 				3BF0C25429E7B9E900AE950B /* Frameworks */,
 				3BF0C25529E7B9E900AE950B /* Resources */,
+				3D170B8FDA66A3E73CC46BAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +383,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF0C28429E7B9F000AE950B /* Build configuration list for PBXNativeTarget "CicadaLiveTests" */;
 			buildPhases = (
+				A09ECA890EE38A1B00CCF626 /* [CP] Check Pods Manifest.lock */,
 				3BF0C26929E7B9F000AE950B /* Sources */,
 				3BF0C26A29E7B9F000AE950B /* Frameworks */,
 				3BF0C26B29E7B9F000AE950B /* Resources */,
@@ -337,9 +402,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF0C28729E7B9F000AE950B /* Build configuration list for PBXNativeTarget "CicadaLiveUITests" */;
 			buildPhases = (
+				87A787B5FBD63588ABF1EF2F /* [CP] Check Pods Manifest.lock */,
 				3BF0C27329E7B9F000AE950B /* Sources */,
 				3BF0C27429E7B9F000AE950B /* Frameworks */,
 				3BF0C27529E7B9F000AE950B /* Resources */,
+				3FB9F24B45A615175BE4B76F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,6 +495,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D170B8FDA66A3E73CC46BAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CicadaLive/Pods-CicadaLive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CicadaLive/Pods-CicadaLive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CicadaLive/Pods-CicadaLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB9F24B45A615175BE4B76F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CicadaLive-CicadaLiveUITests/Pods-CicadaLive-CicadaLiveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CicadaLive-CicadaLiveUITests/Pods-CicadaLive-CicadaLiveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CicadaLive-CicadaLiveUITests/Pods-CicadaLive-CicadaLiveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5721BDF7DCF7F3EBA13DC5FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CicadaLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A787B5FBD63588ABF1EF2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CicadaLive-CicadaLiveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A09ECA890EE38A1B00CCF626 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CicadaLiveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BF0C25329E7B9E900AE950B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -444,7 +614,9 @@
 				3B52AB3529E831D30035E6F6 /* Common.swift in Sources */,
 				3B52AB4629E880AD0035E6F6 /* CollectionPrettyCell.swift in Sources */,
 				3B52AB4229E8796B0035E6F6 /* CollectionNormalCell.swift in Sources */,
+				3B52AB4A29E8F2420035E6F6 /* NetworkTools.swift in Sources */,
 				3B52AB2D29E803EC0035E6F6 /* HomeViewController.swift in Sources */,
+				3B52AB4D29E9061C0035E6F6 /* RecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +796,7 @@
 		};
 		3BF0C28229E7B9F000AE950B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1BFA0903DC133C6F25E044 /* Pods-CicadaLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -652,6 +825,7 @@
 		};
 		3BF0C28329E7B9F000AE950B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B108D325261AEF4170BFF0E /* Pods-CicadaLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -680,6 +854,7 @@
 		};
 		3BF0C28529E7B9F000AE950B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE613B9E94023FF8888AFB3 /* Pods-CicadaLiveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -700,6 +875,7 @@
 		};
 		3BF0C28629E7B9F000AE950B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5C24C8DE830921DCC874B5 /* Pods-CicadaLiveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -720,6 +896,7 @@
 		};
 		3BF0C28829E7B9F000AE950B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B928BC96C2CBC8360C543C73 /* Pods-CicadaLive-CicadaLiveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -738,6 +915,7 @@
 		};
 		3BF0C28929E7B9F000AE950B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52581DBE6B40700E36FCC1DD /* Pods-CicadaLive-CicadaLiveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
