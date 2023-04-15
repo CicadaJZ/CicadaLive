@@ -43,6 +43,18 @@
                         <action selector="stopCapture:" destination="-1" eventType="touchUpInside" id="CZW-9W-Ion"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-BS-ofd">
+                    <rect key="frame" x="258" y="121" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Bzk-kz-MDx"/>
+                        <constraint firstAttribute="width" constant="120" id="EL5-gE-5q2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="切换摄像头"/>
+                    <connections>
+                        <action selector="switchScene:" destination="-1" eventType="touchUpInside" id="94a-0e-lcE"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,7 +62,9 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hHS-ln-II1" secondAttribute="bottom" constant="38" id="83o-RF-9ka"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6vN-tP-fKT" secondAttribute="trailing" constant="15" id="O7W-Sg-Pkq"/>
                 <constraint firstItem="hHS-ln-II1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Yxk-vI-Dls"/>
+                <constraint firstItem="Cdi-BS-ofd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="62" id="r0J-v5-eWR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6vN-tP-fKT" secondAttribute="bottom" constant="38" id="uyf-gE-xXU"/>
+                <constraint firstAttribute="trailing" secondItem="Cdi-BS-ofd" secondAttribute="trailing" constant="15" id="wIF-Bc-Gz1"/>
             </constraints>
             <point key="canvasLocation" x="51" y="20"/>
         </view>

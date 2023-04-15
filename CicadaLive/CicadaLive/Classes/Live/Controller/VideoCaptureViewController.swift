@@ -9,8 +9,10 @@ import UIKit
 import AVFoundation
 
 class VideoCaptureViewController: UIViewController {
-    
+       
     var connection : AVCaptureConnection?
+    var videoInput : AVCaptureDeviceInput?
+    var videoOutput : AVCaptureVideoDataOutput?
     
     lazy var videoQueue = DispatchQueue.global()
     lazy var audioQueue = DispatchQueue.global()
@@ -76,6 +78,21 @@ extension VideoCaptureViewController {
         previewLayer.removeFromSuperlayer()
     }
     
+    @IBAction func switchScene(_ sender: Any) {
+        let device = videoInput?.device
+        let position = (device?.position == .front) ? AVCaptureDevice.Position.back : AVCaptureDevice.Position.front
+        
+        guard let newDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: position) else { return }
+        guard let videoInput = try? AVCaptureDeviceInput(device: newDevice) else { return }
+        
+        session.beginConfiguration()
+        session.removeInput(self.videoInput!)
+        session.addInput(videoInput)
+        session.commitConfiguration()
+        
+        self.videoInput = videoInput
+    }
+    
 }
 
 extension VideoCaptureViewController {
@@ -83,14 +100,15 @@ extension VideoCaptureViewController {
     func setupVideo() {
         guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else { return }
         guard let videoInput = try? AVCaptureDeviceInput(device: device) else { return }
-        session.addInput(videoInput)
+        self.videoInput = videoInput
+        session.addInput(self.videoInput!)
 
         //设置输出源
         let videoOutput = AVCaptureVideoDataOutput()
         videoOutput.setSampleBufferDelegate(self, queue: videoQueue)
         session.addOutput(videoOutput)
         
-        connection = videoOutput.connection(with: .video)
+        self.videoOutput = videoOutput
     }
     
     func setupAudio() {
@@ -110,7 +128,7 @@ extension VideoCaptureViewController : AVCaptureVideoDataOutputSampleBufferDeleg
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         print("采集中...:\(Date().timeIntervalSince1970)")
-        if self.connection == connection {
+        if connection == self.videoOutput?.connection(with: .video) {
             print("视频采集中")
         } else {
             print("音频采集中")
