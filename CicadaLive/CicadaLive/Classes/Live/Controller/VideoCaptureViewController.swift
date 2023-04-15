@@ -10,24 +10,13 @@ import AVFoundation
 
 class VideoCaptureViewController: UIViewController {
     
-    lazy var queue = DispatchQueue.global()
+    var connection : AVCaptureConnection?
     
-    lazy var session : AVCaptureSession = {
-        //创建捕捉会话
-        let session : AVCaptureSession = AVCaptureSession()
-        //设置输入源
-        guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else { return session}
-        guard let videoInput = try? AVCaptureDeviceInput(device: device) else { return session }
-        session.addInput(videoInput)
-
-        //设置输出源
-        let videoOutput = AVCaptureVideoDataOutput()
-        videoOutput.setSampleBufferDelegate(self, queue: queue)
-        session.addOutput(videoOutput)
-        
-//        session.sessionPreset = .cif352x288
-        return session
-    }()
+    lazy var videoQueue = DispatchQueue.global()
+    lazy var audioQueue = DispatchQueue.global()
+    
+    lazy var session : AVCaptureSession = AVCaptureSession()
+    
     
     lazy var previewLayer : AVCaptureVideoPreviewLayer = {
         let previewLayer = AVCaptureVideoPreviewLayer(session: self.session)
@@ -58,7 +47,11 @@ extension VideoCaptureViewController {
 
     @IBAction func startCapture(_ sender: Any) {
         
-//        guard !self.session.isRunning else { return }
+        guard !self.session.isRunning else { return }
+        
+        setupVideo()
+        
+        setupAudio()
         
         print("开始采集")
         
@@ -67,7 +60,7 @@ extension VideoCaptureViewController {
         view.layer.insertSublayer(previewLayer, at: 0)
         
         //开始采集
-        queue.async {
+        DispatchQueue.global().async {
             self.session.startRunning()
         }
         
@@ -77,7 +70,7 @@ extension VideoCaptureViewController {
     @IBAction func stopCapture(_ sender: Any) {
         print("停止采集")
         //停止采集
-        queue.async {
+        DispatchQueue.global().async {
             self.session.stopRunning()
         }
         previewLayer.removeFromSuperlayer()
@@ -85,10 +78,43 @@ extension VideoCaptureViewController {
     
 }
 
-extension VideoCaptureViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
+extension VideoCaptureViewController {
+
+    func setupVideo() {
+        guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) else { return }
+        guard let videoInput = try? AVCaptureDeviceInput(device: device) else { return }
+        session.addInput(videoInput)
+
+        //设置输出源
+        let videoOutput = AVCaptureVideoDataOutput()
+        videoOutput.setSampleBufferDelegate(self, queue: videoQueue)
+        session.addOutput(videoOutput)
+        
+        connection = videoOutput.connection(with: .video)
+    }
+    
+    func setupAudio() {
+        guard let audioDevice = AVCaptureDevice.default(for: .audio) else { return }
+        guard let audioInput = try? AVCaptureDeviceInput(device: audioDevice) else { return }
+        session.addInput(audioInput)
+        
+        let audioOutput = AVCaptureAudioDataOutput()
+        audioOutput.setSampleBufferDelegate(self, queue: audioQueue)
+        session.addOutput(audioOutput)
+    }
+    
+}
+
+
+extension VideoCaptureViewController : AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         print("采集中...:\(Date().timeIntervalSince1970)")
+        if self.connection == connection {
+            print("视频采集中")
+        } else {
+            print("音频采集中")
+        }
     }
     
 }
