@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RoomNormalViewController: UIViewController, UIGestureRecognizerDelegate {
+class RoomNormalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
