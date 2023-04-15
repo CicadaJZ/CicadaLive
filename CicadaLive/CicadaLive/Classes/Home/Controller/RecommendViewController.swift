@@ -122,28 +122,6 @@ extension RecommendViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
-//MARK: 遵循 UICollectionViewDelegate 协议
-extension RecommendViewController : UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let anchorModel = recommendVM.anchorGroups[indexPath.section].anchors[indexPath.row] 
-        anchorModel.isVertical == 0 ? pushNormalRoomVC() : presentShowRoomVC()
-    }
-    
-    func pushNormalRoomVC() {
-        let normalRoomVC = RoomNormalViewController()
-        navigationController?.pushViewController(normalRoomVC, animated: true)
-    }
-    
-    func presentShowRoomVC() {
-        let showRoomVC = RoomShowViewController()
-        present(showRoomVC, animated: true)
-    }
-    
-    
-}
-
-
 //MARK: 遵循 UICollectionViewDataSource 协议
 extension RecommendViewController : UICollectionViewDataSource {
     
@@ -182,4 +160,31 @@ extension RecommendViewController : UICollectionViewDataSource {
     
     
 }
+
+//MARK: 遵循 UICollectionViewDelegate 协议
+extension RecommendViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = VideoCaptureViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let anchorModel = recommendVM.anchorGroups[indexPath.section].anchors[indexPath.row]
+//        anchorModel.isVertical == 0 ? pushNormalRoomVC() : presentShowRoomVC()
+//    }
+    
+    func pushNormalRoomVC() {
+        let normalRoomVC = RoomNormalViewController()
+        navigationController?.pushViewController(normalRoomVC, animated: true)
+    }
+    
+    func presentShowRoomVC() {
+        let showRoomVC = RoomShowViewController()
+        present(showRoomVC, animated: true)
+    }
+    
+    
+}
+
 

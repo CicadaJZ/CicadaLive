@@ -46,6 +46,8 @@
 		3B52AB7529EA66F80035E6F6 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB7429EA66F80035E6F6 /* RoomShowViewController.swift */; };
 		3B52AB7729EA67040035E6F6 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB7629EA67040035E6F6 /* RoomNormalViewController.swift */; };
 		3B52AB7929EA6C510035E6F6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52AB7829EA6C510035E6F6 /* BaseNavigationController.swift */; };
+		3B5DE59F29EA8FAB0025EFA1 /* VideoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DE59D29EA8FAB0025EFA1 /* VideoCaptureViewController.swift */; };
+		3B5DE5A029EA8FAB0025EFA1 /* VideoCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5DE59E29EA8FAB0025EFA1 /* VideoCaptureViewController.xib */; };
 		3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */; };
 		3BF0C26229E7B9E900AE950B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26029E7B9E900AE950B /* Main.storyboard */; };
 		3BF0C26429E7B9EF00AE950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0C26329E7B9EF00AE950B /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		3B52AB7429EA66F80035E6F6 /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
 		3B52AB7629EA67040035E6F6 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
 		3B52AB7829EA6C510035E6F6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		3B5DE59D29EA8FAB0025EFA1 /* VideoCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureViewController.swift; sourceTree = "<group>"; };
+		3B5DE59E29EA8FAB0025EFA1 /* VideoCaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCaptureViewController.xib; sourceTree = "<group>"; };
 		3BF0C25729E7B9E900AE950B /* CicadaLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicadaLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF0C25A29E7B9E900AE950B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF0C26129E7B9E900AE950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -325,6 +329,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3B5DE59C29EA8F770025EFA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B5DE59D29EA8FAB0025EFA1 /* VideoCaptureViewController.swift */,
+				3B5DE59E29EA8FAB0025EFA1 /* VideoCaptureViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3BCE6CF529E7DDC100378B72 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +377,7 @@
 		3BCE6CF829E7DDE800378B72 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				3B5DE59C29EA8F770025EFA1 /* Controller */,
 				3B52AB2229E802210035E6F6 /* Live.storyboard */,
 			);
 			path = Live;
@@ -571,6 +585,7 @@
 				3BF0C26729E7B9EF00AE950B /* LaunchScreen.storyboard in Resources */,
 				3B52AB3F29E8711B0035E6F6 /* CollectionHeaderView.xib in Resources */,
 				3B52AB4329E8796B0035E6F6 /* CollectionNormalCell.xib in Resources */,
+				3B5DE5A029EA8FAB0025EFA1 /* VideoCaptureViewController.xib in Resources */,
 				3BF0C26429E7B9EF00AE950B /* Assets.xcassets in Resources */,
 				3B52AB2529E8025A0035E6F6 /* Profile.storyboard in Resources */,
 				3B52AB6929E9AC120035E6F6 /* RecommendGameView.xib in Resources */,
@@ -721,6 +736,7 @@
 				3BF0C25B29E7B9E900AE950B /* AppDelegate.swift in Sources */,
 				3B52AB3229E810490035E6F6 /* PageTitleView.swift in Sources */,
 				3B52AB6029E99A4C0035E6F6 /* CollectionCycleCell.swift in Sources */,
+				3B5DE59F29EA8FAB0025EFA1 /* VideoCaptureViewController.swift in Sources */,
 				3B52AB7729EA67040035E6F6 /* RoomNormalViewController.swift in Sources */,
 				3B52AB5D29E993DA0035E6F6 /* CycleModel.swift in Sources */,
 				3B52AB3729E8437E0035E6F6 /* PageContentView.swift in Sources */,
