@@ -7,9 +7,8 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
     lazy var cycleData : [CycleModel] = [CycleModel]()
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
     private lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     private lazy var verticalGroup : AnchorGroup = AnchorGroup()
 }
@@ -68,23 +67,7 @@ extension RecommendViewModel {
         
         //3.热门
         dispatchGroup.enter()
-        NetworkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { [weak self] result in
-            guard let resultDic = result as? Dictionary<String, Any> else { return }
-            print(resultDic)
-
-            guard let dataArray = resultDic["data"] as? [Dictionary<String, Any>] else { return }
-            for dict in dataArray {
-                //kvc方式 字典转模型
-                let group = AnchorGroup(dict: dict)
-                self?.anchorGroups.append(group)
-            }
-            
-//            for group in self.anchorGroups {
-//                for anchor in group.anchors {
-//                    print("aaa:\(anchor.nickname)")
-//
-//                }
-//            }
+        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             dispatchGroup.leave()
         }
         

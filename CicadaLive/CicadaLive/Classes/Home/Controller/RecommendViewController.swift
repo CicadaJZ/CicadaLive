@@ -2,7 +2,7 @@
 //  RecommendViewController.swift
 //  CicadaLive
 //
-//  Created by 知了 on 2023/4/14.
+//  Created by  on 2023/4/14.
 //
 
 import UIKit
@@ -20,7 +20,7 @@ private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class RecommendViewController: UIViewController {
+class RecommendViewController: BaseViewController {
     
     private lazy var recommendVM: RecommendViewModel = RecommendViewModel()
     
@@ -59,18 +59,18 @@ class RecommendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
         setupUI()
         loadData()
+        
     }
-    
-
-
 }
 
 //MARK: 设置UI
 extension RecommendViewController {
-    func setupUI() {
+    override func setupUI() {
+        //ani
+        contenView = collectionView
+        
         //
         view.addSubview(collectionView)
         
@@ -82,6 +82,9 @@ extension RecommendViewController {
         
         //
         collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+        
+        //
+        super.setupUI()
     }
 }
 
@@ -95,6 +98,10 @@ extension RecommendViewController {
             
             //
             self.gameView.groups = self.recommendVM.anchorGroups
+            
+            
+            //停止loading
+            self.loadDataFinished()
         }
         
         //
@@ -117,6 +124,22 @@ extension RecommendViewController : UICollectionViewDelegateFlowLayout {
 
 //MARK: 遵循 UICollectionViewDelegate 协议
 extension RecommendViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let anchorModel = recommendVM.anchorGroups[indexPath.section].anchors[indexPath.row] 
+        anchorModel.isVertical == 0 ? pushNormalRoomVC() : presentShowRoomVC()
+    }
+    
+    func pushNormalRoomVC() {
+        let normalRoomVC = RoomNormalViewController()
+        navigationController?.pushViewController(normalRoomVC, animated: true)
+    }
+    
+    func presentShowRoomVC() {
+        let showRoomVC = RoomShowViewController()
+        present(showRoomVC, animated: true)
+    }
+    
     
 }
 
@@ -156,6 +179,7 @@ extension RecommendViewController : UICollectionViewDataSource {
         
         return headerView
     }
+    
     
 }
 

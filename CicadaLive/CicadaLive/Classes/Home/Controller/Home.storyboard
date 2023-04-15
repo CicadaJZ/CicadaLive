@@ -28,7 +28,7 @@
         <!--首页-->
         <scene sceneID="sQ6-r7-41m">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z34-2w-whG" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z34-2w-whG" customClass="BaseNavigationController" customModule="CicadaLive" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="tabHome" selectedImage="tabHomeHL" id="NRw-0h-yZ2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ObJ-xy-Np0">

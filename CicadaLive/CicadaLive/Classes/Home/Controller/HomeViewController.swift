@@ -9,7 +9,7 @@ import UIKit
 
 private let kTitleViewH : CGFloat = 40
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     private lazy var pageTitleView : PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
@@ -41,14 +41,15 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+
     }
     
 
 }
 
 extension HomeViewController {
-    private func setupUI() {
+    override func setupUI() {
+        super.setupUI()
         
         setupNavigationBar()
         
